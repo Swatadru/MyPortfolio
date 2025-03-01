@@ -26,3 +26,17 @@ window.onscroll = ()=>{
     menubar.classList.remove('bx-x');
     Navbar.classList.remove('active')
 } 
+
+function getFormValues() {
+    var fullName = document.getElementById("full_name").value;
+    var fromEmail = document.getElementById("from_email").value;
+    var mobileNumber = document.getElementById("mobile_number").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    console.log("Full Name: " + fullName);
+    console.log("Email: " + fromEmail);
+    console.log("Mobile Number: " + mobileNumber);
+    console.log("Subject: " + subject);
+    console.log("Message: " + message);
+  }
