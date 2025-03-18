@@ -10,8 +10,9 @@
     color: #fff;
 }
 body{
-    background: #0f0a0a;
+    background: radial-gradient(rgb(6, 6, 78),black);
     height: 100vh;
+    opacity: 100%;
 }
 html{
     font-size: 62.5%;
@@ -81,7 +82,7 @@ html{
     }
 }
 .navbar a:hover,.navbar a.active{
-    color: #ff00ee;
+    color: #666699;
 }
 section{
     padding: 10rem 9% 2rem;
@@ -116,9 +117,9 @@ section{
 .text-animation h2{
     font-size: 3.2rem;
     font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .7px #ff00ee;
-    background: linear-gradient(#ff00ee,#ff00ee);
+    color: #bcbcd264;
+    -webkit-text-stroke: .7px #bcbcd251;
+    background: linear-gradient(#bcbcd2,#5b5b65);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -33rem 0;
@@ -143,7 +144,7 @@ section{
     top: 0;
     height: 100%;
     width: 0;
-    border-right: 2px solid #ff00ee;
+    border-right: 2px solid #3e3e3e;
     transform: translateY(-100px);
     opacity: 0;
     animation: CursorSlide 6s linear infinite,
@@ -165,7 +166,7 @@ section{
 
 }
 .text-content p{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin: 1rem 0;
     transform: translateX(100px);
     opacity: 0;
@@ -215,8 +216,8 @@ section{
     height: 100%;
     width: 15rem;
     color: #fff;
-    background: rgba(255,255,255,.1);
-    border: .2rem solid rgba(255,255,255,.3);
+    background: rgb(6, 6, 78);
+    border: .2rem solid rgba(255, 255, 255, 0.646);
     backdrop-filter: blur(5rem);
     border-radius: .8rem;
     font-size: 1.5rem;
@@ -236,7 +237,7 @@ section{
     height: 300%;
     width: 100%;
     background: linear-gradient(
-        #0f0a0a,#ff00ee,#0f0a0a,#ff00ee
+        rgb(6, 6, 78),black,rgb(6, 6, 78),black
     );
     z-index: -1;
     transition: .5s ease;
@@ -250,8 +251,8 @@ section{
 .social-media i{
     display: inline-block;
     font-size: 2.5rem;
-    background: rgba(255,255,255,.1);
-    border: .2rem solid rgba(255,255,255,.3);
+    background: rgba(6, 6, 78, 0.1);
+    border: .2rem solid rgba(255, 255, 255, 0.646);
     padding: .8rem;
     margin: 0 .5rem;
     border-radius: 50%;
@@ -283,7 +284,7 @@ section{
     height: 300%;
     width: 100%;
     background: linear-gradient(
-        #0f0a0a,#ff00ee,#0f0a0a,#ff00ee
+        rgb(6, 6, 78),black,rgb(6, 6, 78),black
     );
     z-index: -1;
     transition: .5s ease;
@@ -297,7 +298,7 @@ i:hover::after{
     background: rgba(255,255,255,.1);
     border: .2rem solid rgba(255,255,255,.3);
     border-radius: 50%;
-    filter: drop-shadow(0 0 8rem #ff00ee);
+    filter: drop-shadow(0 0 8rem #3e3e3e);
     animation: Scale 1s ease forwards;
     scale: 0;
     animation-delay: 2s;
@@ -341,15 +342,14 @@ section.start-animation .title{
     }
 }
 .title span{
-    color: #ff00ee;
+    color: #bcbcd2;
 }
 .about img{
-    height: 25rem;
-    width: 25rem;
+    width: 30rem;
     background: rgba(255,255,255,.1);
     border: .2rem solid rgba(255,255,255,.3);
     border-radius: 50%;
-    filter: drop-shadow(0 0 8rem #ff00ee);
+    filter: drop-shadow(0 0 8rem #3e3e3e);
     scale: 0;
 }
 section.start-animation .aboutImg{
@@ -385,7 +385,7 @@ section.start-animation .text-content2 h2{
     }
 }
 .text-content2 p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 2rem 0 3rem;
     transform: translatex(100px);
     opacity: 0;
@@ -460,14 +460,14 @@ section.start-animation .column h2{
 }
 
 .box{
-    border-left: .2rem solid #ff00ee;
+    border-left: .2rem solid #bcbcd2;
 }
 .education-content {
     padding-left: 1.9rem;
 }
 .education-content .content{
     padding: 1.5rem;
-    border: .2rem solid #ff00ee;
+    border: .2rem solid #3e3e3e;
     background: rgba(255,255,255,.1);
     border-radius: .5rem;
     margin-bottom: 2rem;
@@ -481,14 +481,14 @@ section.start-animation .column h2{
     height: 1.4rem;
     width: 1.4rem;
     border-radius: 50%;
-    background: #ff00ee;
+    background: #3e3e3e;
 }
 .content .year{
     font-size: 1.5rem;
-    color: #ff00ee;
+    color: #bcbcd2;
 }
 .content .year i{
-    color: #ff00ee;
+    color: #bcbcd2;
     font-size: 1.5rem;
     margin-left: .5rem;
 }
@@ -568,7 +568,7 @@ section.start-animation .skill-box2{
 .bar{
     position: absolute;
     height: 100%;
-    background: #ff00ee;
+    background: #bcbcd2;
 }
 .bar-1{
     width: 90%;
@@ -672,7 +672,7 @@ section.start-animation .project-box2{
     width: 15rem;
     color: #fff;
     background: rgba(255,255,255,.1);
-    border: .2rem solid rgba(255,255,255,.3);
+    border: .2rem solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5rem);
     border-radius: .8rem;
     font-size: 1.5rem;
@@ -692,7 +692,7 @@ section.start-animation .project-box2{
     height: 300%;
     width: 100%;
     background: linear-gradient(
-        #0f0a0a,#ff00ee,#0f0a0a,#ff00ee
+        rgb(6, 6, 78),black,rgb(6, 6, 78),black
     );
     z-index: -1;
     transition: .5s ease;
@@ -778,7 +778,7 @@ section.start-animation .project-box2{
     height: 300%;
     width: 100%;
     background: linear-gradient(
-        #0f0a0a,#ff00ee,#0f0a0a,#ff00ee
+        rgb(6, 6, 78),black,rgb(6, 6, 78),black
     );
     z-index: -1;
     transition: .5s ease;
@@ -823,7 +823,7 @@ section.start-animation input:nth-child(2){
     border: .2rem solid rgba(255,255,255,.3);
     outline: none;
     backdrop-filter: blur(10px);
-    filter: drop-shadow(0 0 100px #ff00ee);
+    filter: drop-shadow(0 0 100px #3e3e3e);
     border-radius: .8rem;
     gap: 2.5rem;
     margin: .7rem 0;
@@ -844,11 +844,11 @@ input::placeholder{
 }
 input:focus,
 input:valid{
-    border: .2rem solid #ff00ee;
+    border: .2rem solid #3e3e3e;
 }
 textarea:focus,
 textarea:valid{
-    border: .2rem solid #ff00ee;
+    border: .2rem solid #3e3e3e;
 }
 textarea{
     resize: none;
@@ -864,9 +864,9 @@ section.start-animation .btn{
     animation-delay: 1.4s;
 }
 .contact .btn:hover{
-    background: #ff00ee;
-    box-shadow: 0 0 .3rem #ff00ee,
-    0 0 .7rem #ff00ee;
+    background: #3e3e3e;
+    box-shadow: 0 0 .3rem #3e3e3e,
+    0 0 .7rem #3e3e3e;
 }
 /* footer */
 
@@ -886,7 +886,7 @@ footer i{
     justify-content: center;
     align-items: center;
     padding: .8rem; 
-    background: #ff00ee;
+    background: #2b2a2a;
     color: #0f0a0a;
     border-radius: 50%;
     font-size: 2.4rem;
@@ -921,7 +921,7 @@ footer i{
         top: 100%;
         width: 100%;
         padding: 1rem 3%;
-        background: #0f0a0a;
+        background: #0a0a0f;
         border-top: 1px solid rgba(255,255,255,.1);
         border-bottom: .2rem solid rgba(255,255,255,.1);
         display: none;
