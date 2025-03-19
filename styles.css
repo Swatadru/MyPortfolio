@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
 * {
     margin: 0;
@@ -723,6 +724,44 @@ section.start-animation .project-box2{
     border-radius: 8px;
 }
 
+.resume-container h2 {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 4s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.resume-preview {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.resume-preview img {
+    width: 50%;
+    max-height: 500px;
+    object-fit: cover;
+    /* Adjust the blur amount as needed */
+    filter: blur(2px) drop-shadow(0 0 8rem #4644502d);
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    position: relative;
+    margin: 0 auto; /* Center the container itself */
+    max-width: 800px;
+    border-radius: 20px;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 6s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
 .download-btn-section{
     width: 32.5rem;
     height: 5rem;
@@ -752,10 +791,10 @@ section.start-animation .project-box2{
         width: 0;
     }
 }
- .download-btn{
+.download-btn{
     height: 100%;
     width: 20rem;
-    margin-top: 10px;
+    margin-top: 20px;
     color: #fff;
     background: rgba(255,255,255,.1);
     border: solid rgba(255,255,255,.3);
@@ -769,6 +808,9 @@ section.start-animation .project-box2{
     position: relative;
     overflow: hidden;
     z-index: 1;
+    text-decoration: none;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 6s forwards; /* Fade-in and scale-up animations */
 }
 .download-btn::before{
     content: "";
